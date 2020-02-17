@@ -1,0 +1,16 @@
+#DATE - Only used to store value in 'YYYY-MM-DD' format
+#TIME - It stores the data in 'HH:MM:SS' format
+#DATETIME - If you have a need to store data in both DATE and TIME format use would need to use it. 'YYYY-MM-DD HH:MM:SS'
+
+
+
+#Creating our date time data 
+CREATE TABLE people (name VARCHAR(100), birthdate DATE, birthtime TIME, birthdt DATETIME);
+ 
+INSERT INTO people (name, birthdate, birthtime, birthdt)
+VALUES('Padma', '1983-11-11', '10:07:35', '1983-11-11 10:07:35');
+ 
+INSERT INTO people (name, birthdate, birthtime, birthdt)
+VALUES('Larry', '1943-12-25', '04:10:42', '1943-12-25 04:10:42');
+ 
+SELECT * FROM people;

@@ -1,0 +1,82 @@
+## Creating Databases Code
+
+Start the CLI:
+    mysql-ctl cli; 
+
+List available databases:
+    show databases; 
+
+The general command for creating a database:
+    CREATE DATABASE database_name; 
+
+A specific example:
+CREATE DATABASE soap_store;
+
+## To drop a database:
+    DROP DATABASE database_name; 
+
+For Example:
+DROP DATABASE hello_world_db;
+
+## Using database
+    USE <database name>;
+ 
+-- example:
+USE dog_walking_app;
+ 
+    SELECT database(); - It can be used to show the name of currently using database;
+
+## Introduction to Tables
+    A database is just a bunch of tables ( In a relational database atleast)
+    Tables Holds the data, so it is a collection of related data held in a stuructural format within a database
+
+## The Basic DataTypes:
+
+
+## Creating your own table
+CREATE TABLE tablename
+  (
+    column_name data_type,
+    column_name data_type
+  );
+CREATE TABLE cats
+  (
+    name VARCHAR(100),
+    age INT
+  );
+
+## Show tables and columns
+    SHOW TABLES;
+ 
+    SHOW COLUMNS FROM tablename;
+    DESC tablename;  -  Probabily these two are same
+
+## Droping Tables
+    DROP TABLE <tablename>; 
+
+A specific example:
+DROP TABLE cats;
+
+## Inserting Data
+
+The "formula":
+    INSERT INTO table_name(column_name) VALUES (data);
+
+For example:
+INSERT INTO cats(name, age) VALUES ('Jetson', 7);
+
+
+## Selecting data 
+    SELECT * FROM cats; 
+
+## Multiple Inserting
+    INSERT INTO table_name 
+                (column_name, column_name) 
+    VALUES      (value, value), 
+                (value, value), 
+                (value, value);
+
+## Quotes inside the inserted VALUES
+    Escape the quotes with a backslash: "This text has \"quotes\" in it" or 'This text has \'quotes\' in it'
+    Alternate single and double quotes: "This text has 'quotes' in it" or 'This text has "quotes" in it'
+

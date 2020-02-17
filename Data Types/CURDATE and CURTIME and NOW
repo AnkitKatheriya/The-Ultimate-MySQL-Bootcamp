@@ -1,0 +1,6 @@
+CURDATE() - Gives Current date
+CURTIME() - Gives current time
+NOW()     - Gives current datetime
+
+
+
